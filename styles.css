@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: poppins;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    background: white;
+    justify-content: space-around;
+    
+  }
+  
+  .bars {
+    width: 40px;
+    display: none;
+  }
+
+  
+  .sms_logo{
+    width:300px;
+    height: 100px;
+    padding-bottom: 7px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 10px;
+
+  }
+  
+  nav ul li a {
+    font-size: 14px;
+    color: black;
+  
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 4px solid rgb(211, 138, 4);
+    transition: 0.2s;
+    animation: infinite;
+  }
+  .site_pic{
+    width: 100%;
+    height: 800px;
+    filter: brightness(50%);
+  }
+  .site_div{
+    position: relative;
+  }
+  .site_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: white;
+   
+  }
+  .site_overlay h1{
+    font-size: 5rem;
+  }
+  .site_overlay p{
+    font-style: italic;
+  }
+  .sav_btn{
+    background: rgb(180, 118, 3);
+  border: 0.085vw solid white;
+  padding: 0.68vw;
+  color: white;
+  width: 20.2vw;
+  height: 50px;
+  margin-top: 2vw;
+  font-size: larger;
+  margin-left: 35%;
+  }
+  .div_exp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:600px 600px;
+   grid-template-areas: "exp1 exp2"
+   "exp3 exp4";
+   margin-top: 30px;
+  
+  }
+  .exp1 {
+    grid-area: exp1;
+    
+  }
+  .exp1 img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.7);
+  }
+  .exp4 img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.7);
+  }
+  .exp2{
+    grid-area: exp2;
+    padding: 40px;
+    
+  }
+  .exp3 {
+    grid-area: exp3;
+ 
+  }
+  .exp4 {
+    grid-area: exp4;
+   
+  }
+  .exp2 h2,p{
+    text-align: center;
+  }
+  .exp2 p{
+    font-style: italic;
+    font-size: small;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;;
+  }
+  .exp2 h2{
+    margin-bottom: 30px;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  .serv_btn{
+     background: rgb(180, 118, 3);
+  border: 0.085vw solid white;
+  padding: 0.68vw;
+  color: white;
+  width: 18.2vw;
+  height: 50px;
+  margin-top: 0.595vw;
+  font-size: medium;
+  margin-left: 140px;
+  margin-top: 20px;
+  }
+  .exp3 ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exp3 ul li::before {
+    content: "\2022"; /* Unicode for bullet point */
+    margin-right: 10px;
+  }
+  .exp3 {
+    padding: 70px;
+  }
+  .exp3 h2{
+    margin: 30px;
+    padding-right: 200px;
+  }
+  .exp3 ul li{
+    font-size: small;
+  }
+  .par_leader{
+    margin-top: 20px;
+  }
+  .p_leader{
+    padding-right: 120px;
+  }
+  .eng_pic{
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+  }
+  form {
+    max-width: 400px;
+    margin: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group input{
+    
+    background-color:rgb(197, 196, 196);
+    height: 60px;
+    border: none;
+    outline: none;
+  }
+  #message{
+    background-color: rgb(197, 196, 196);
+    width: 700px;
+    height: 200px;
+    outline: none;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: large;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    width: 100px;
+    height: 50px;
+    color:black;
+    border: 3.5px solid orange;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: rgb(197, 196, 196);
+    color : black;
+    border: none;
+
+  }
+  .form_inp input{
+    width: 700px;
+  }
+  .form_inp{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  .enter_cont h3{
+    padding-bottom: 20px;
+  }
+  .enter_cont ul li{
+    line-height: 30px;
+    opacity: 0.5;
+  }
+  .enter_cont ul li span{
+    color: red;
+
+  }
+  footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    background-color: black;
+    padding-top: 40px;
+  }
+  footer ul li,a{
+    color: white;
+  }
+  footer h3{
+  color:rgb(255, 60, 0);
+
+  }
+  .comp{
+    padding-top: 20px;
+    font-size: small;
+  }
+  footer h4{
+    color: white;
+    opacity: 0.7;
+    padding-bottom: 20px;
+  }
