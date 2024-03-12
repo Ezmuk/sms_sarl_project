@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  .about_pic{
+    width: 100%;
+    height: 800px;
+    filter: brightness(30%);
+  }
+  .about_site{
+    position: relative;
+  }
+  .about_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    color: white;
+   
+  }
+  .about_overlay h1{
+    font-size: 4rem;
+  }
+  .about_overlay p{
+    font-style: italic;
+  }
+  .abo_btn{
+    background: rgb(180, 118, 3);
+  border: 0.085vw solid white;
+  padding: 0.68vw;
+  color: white;
+  width: 20.2vw;
+  height: 50px;
+  
+  font-size: larger;
+  
+  }
